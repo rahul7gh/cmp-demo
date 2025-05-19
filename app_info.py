@@ -1,0 +1,7 @@
+{
+  "app_name": "xyz",
+  "arguments": {
+    "arg1": "val1",
+    "arg2": "val2"
+  }
+}
