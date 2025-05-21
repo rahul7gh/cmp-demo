@@ -1,11 +1,9 @@
 import argparse
 
 parser = argparse.ArgumentParser(description="Process extra vars")
-parser.add_argument("--argument1", type=str, help="Argument 1")
-parser.add_argument("--argument2", type=int, help="Argument 2")
+parser.add_argument("--ipaddress", type=str, help="ipaddress)
+parser.add_argument("--machine_name", type=int, help="machine_name")
 
 args = parser.parse_args()
-
-print("Received parameters:)
-print(f"Argument 1: {args.argument1}")
-print(f"Argument 2: {args.argument2}")
+output={"cpu":"2GB",memory:"16384MB",disk:"131072MB"}
+print(json.dumps({"output":output}))
