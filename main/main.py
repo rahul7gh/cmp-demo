@@ -1,6 +1,6 @@
 import argparse
 import json
-parser = argparse.ArgumentParser(description="Process extra vars)
+parser = argparse.ArgumentParser(description="Process extra vars")
 parser.add_argument("--ipaddress", type=str, help="ipaddress")
 parser.add_argument("--machine_name", type=str, help="machine_name")
 
