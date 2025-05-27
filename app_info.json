@@ -2,6 +2,8 @@
   "app_name": "xyz",
   "arguments": {
     "ipaddress": "10.20.1.2",
-    "machine_name": "gcc_host_1"
+    "machine_name": "gcc_host_1",
+    "instance_type":"small",
+    "env":"development"
   }
 }
