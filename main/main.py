@@ -3,9 +3,11 @@ import json
 parser = argparse.ArgumentParser(description="Process extra vars")
 parser.add_argument("--ipaddress", type=str, help="ipaddress")
 parser.add_argument("--machine_name", type=str, help="machine_name")
+parser.add_argument("--instance_type", type=str, help="instance_type")
+parser.add_argument("--env", type=str, help="env")
 
 args = parser.parse_args()
-output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"2","memory":"16384MB","disk":"131072MB"}
+output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"2","memory":"16384MB","disk":"131072MB","instance_type":args.env}
 print(json.dumps({"output":output}))
 
 
