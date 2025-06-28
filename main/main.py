@@ -7,7 +7,7 @@ parser.add_argument("--instance_type", type=str, help="instance_type")
 parser.add_argument("--env", type=str, help="env")
 
 args = parser.parse_args()
-output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"345","memory":"99384MB","disk":"131072MB","instance_type":args.instance_type,"env":args.env}
+output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"543","memory":"1122MB","disk":"131072MB","instance_type":args.instance_type,"env":args.env}
 print(json.dumps({"output":output}))
 
 
