@@ -5,7 +5,7 @@ parser.add_argument("--ipaddress", type=str, help="ipaddress")
 parser.add_argument("--comments", type=str, help="comments")
 
 args = parser.parse_args()
-output={"ipaddress":args.ipaddress,"status":"ON"}
+output={"ipaddress":args.ipaddress,"status":"ON","comments":args.comments}
 print(json.dumps({"output":output}))
 
 
