@@ -5,6 +5,7 @@
     "machine_name": "gcc_host_1",
     "instance_type":"small",
     "env":"development",
-    "comments":"testing"
+    "comments":"testing",
+    "instance_spec_vars":"{}"
   }
 }
