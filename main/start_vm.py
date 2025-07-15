@@ -6,7 +6,7 @@ parser.add_argument("--comments", type=str, help="comments")
 parser.add_argument("--instance_spec_vars", type=str, help="instance_spec_vars")
 
 args = parser.parse_args()
-
+print("GG",args.instance_spec_vars)
 loaded_data=json.loads(args.instance_spec_vars)
 
 output={"ipaddress":args.ipaddress,"status":"ON","comments":args.comments,"instance_spec_vars":loaded_data}
