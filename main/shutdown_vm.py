@@ -4,7 +4,11 @@ parser = argparse.ArgumentParser(description="Process extra vars")
 parser.add_argument("--ipaddress", type=str, help="ipaddress")
 parser.add_argument("--comments", type=str, help="comments")
 
+parser.add_argument("--instance_spec_vars", type=str, help="instance_spec_vars")
+
 args = parser.parse_args()
+
+loaded_data=args.instance_spec_vars
 output={"ipaddress":args.ipaddress,"status":"OFF","comments":args.comments}
 print(json.dumps({"output":output}))
 
