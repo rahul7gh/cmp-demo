@@ -9,7 +9,7 @@ args = parser.parse_args()
 
 loaded_data=args.instance_spec_vars
 
-output={"ipaddress":args.ipaddress,"status":"ON","comments":args.comments,"instance_spec_vars":loaded_data}
+output={"ipaddress":args.ipaddress,"status":"ON","comments":"","instance_spec_vars":loaded_data}
 print(json.dumps({"output":output}))
 
 
